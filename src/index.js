@@ -11,7 +11,7 @@ const initialState = {
     total: 0
 };
 
-function reducer(state, action) {
+function Welcome(state, action) {
     switch (action.type) {
         case 'increment_apple':
             return {
@@ -192,7 +192,7 @@ function TotalCount({ state }) {
 }
 
 function Counter() {
-    const [state, dispatch] = useReducer(reducer, initialState);
+    const [state, dispatch] = useReducer(Welcome, initialState);
 
     return (
         <div>
