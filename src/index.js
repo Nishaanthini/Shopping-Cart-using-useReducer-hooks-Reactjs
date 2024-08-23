@@ -12,7 +12,7 @@ const initialState = {
 };
 
 function Welcome(state, action) {
-    switch (action.type) {
+    switch (action.category) {
         case 'increment_apple':
             return {
                 ...state,
@@ -114,9 +114,9 @@ function CounterOne({ state, dispatch }) {
             <div className='f1'>
             <p >Apple: {state.apple}</p>
             <div className='btn'>
-            <button onClick={() => dispatch({ type: 'increment_apple' })}>+</button>
-            <button onClick={() => dispatch({ type: 'decrement_apple' })}>-</button>
-            <button onClick={() => dispatch({ type: 'reset_apple' })}>Reset</button>
+            <button onClick={() => dispatch({ category: 'increment_apple' })}>+</button>
+            <button onClick={() => dispatch({ category: 'decrement_apple' })}>-</button>
+            <button onClick={() => dispatch({ category: 'reset_apple' })}>Reset</button>
             </div>
             </div>
         </div>
@@ -129,9 +129,9 @@ function CounterTwo({ state, dispatch }) {
             <div className='f1'>
             <p >Banana: {state.banana}</p>
             <div className='btn'>
-            <button onClick={() => dispatch({ type: 'increment_banana' })}>+</button>
-            <button onClick={() => dispatch({ type: 'decrement_banana' })}>-</button>
-            <button onClick={() => dispatch({ type: 'reset_banana' })}>Reset</button>
+            <button onClick={() => dispatch({ category: 'increment_banana' })}>+</button>
+            <button onClick={() => dispatch({ category: 'decrement_banana' })}>-</button>
+            <button onClick={() => dispatch({ category: 'reset_banana' })}>Reset</button>
             </div>
             </div>
         </div>
@@ -144,9 +144,9 @@ function CounterThree({ state, dispatch }) {
             <div className='f1'>
             <p>Papaya: {state.papaya}</p>
             <div className='btn'>
-            <button onClick={() => dispatch({ type: 'increment_papaya' })}>+</button>
-            <button onClick={() => dispatch({ type: 'decrement_papaya' })}>-</button>
-            <button onClick={() => dispatch({ type: 'reset_papaya' })}>Reset</button>
+            <button onClick={() => dispatch({ category: 'increment_papaya' })}>+</button>
+            <button onClick={() => dispatch({ category: 'decrement_papaya' })}>-</button>
+            <button onClick={() => dispatch({ category: 'reset_papaya' })}>Reset</button>
             </div>
             </div>
         </div>
@@ -158,9 +158,9 @@ function CounterFour({ state, dispatch }) {
         <div className='f1'>
           <p>Orange: {state.orange}</p>
           <div className='btn'>
-          <button onClick={() => dispatch({ type: 'increment_orange' })}>+</button>
-          <button onClick={() => dispatch({ type: 'decrement_orange' })}>-</button>
-          <button onClick={() => dispatch({ type: 'reset_orange' })}>Reset</button>
+          <button onClick={() => dispatch({ category: 'increment_orange' })}>+</button>
+          <button onClick={() => dispatch({ category: 'decrement_orange' })}>-</button>
+          <button onClick={() => dispatch({ category: 'reset_orange' })}>Reset</button>
           </div>
           </div>
       </div>
@@ -172,9 +172,9 @@ function CounterFive({ state, dispatch }) {
         <div className='f1'>
           <p>Cherry: {state.cherry}</p>
           <div className='btn'>
-          <button onClick={() => dispatch({ type: 'increment_cherry' })}>+</button>
-          <button onClick={() => dispatch({ type: 'decrement_cherry' })}>-</button>
-          <button onClick={() => dispatch({ type: 'reset_cherry' })}>Reset</button>
+          <button onClick={() => dispatch({ category: 'increment_cherry' })}>+</button>
+          <button onClick={() => dispatch({ category: 'decrement_cherry' })}>-</button>
+          <button onClick={() => dispatch({ category: 'reset_cherry' })}>Reset</button>
           </div>
           </div>
       </div>
